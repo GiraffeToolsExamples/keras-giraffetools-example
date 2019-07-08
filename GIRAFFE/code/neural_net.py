@@ -3,95 +3,124 @@ Created by the GiraffeTools Tensorflow generator.
 Warning, here be dragons.
 
 '''
-
-
-import tensorflow as tf
-from tensorflow.keras.layers import Conv2D
-from tensorflow.keras.layers import MaxPooling2D
-from tensorflow.keras.layers import Dropout
-from tensorflow.keras.layers import Flatten
-from tensorflow.keras.layers import Dense
+from keras.layers import Conv2D
+from keras.layers import Activation
+from keras.layers import MaxPooling2D
+from keras.layers import Dropout
+from keras.layers import Flatten
+from keras.layers import Dense
 
 # Model
-def NeuralNet(
-    optimizer='adam',
-    loss='sparse_categorical_crossentropy',
-    metrics=['accuracy']
-  ):
+def NeuralNet(shape):
+    model = Sequential()
 
-    conv2d = Conv2D(
-      32,
-      (3,3),
+    model.add(Conv2D(
+      32,  # filters
+      (3, 3),  # kernel_size,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
       use_bias=True,
       kernel_initializer='glorot_uniform',
-      bias_initializer='zeros',
-      name='conv2d'
-    )
+      bias_initializer='zeros'
+    ))
 
-    conv2d_1 = Conv2D(
-      32,
-      (3,3),
+    model.add(Activation(
+      'relu',  # activation
+    ))
+
+    model.add(Conv2D(
+      32,  # filters
+      (3, 3),  # kernel_size,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
       use_bias=True,
       kernel_initializer='glorot_uniform',
-      bias_initializer='zeros',
-      name='conv2d_1'
-    )(conv2d)
+      bias_initializer='zeros'
+    ))
 
-    max_pooling2d = MaxPooling2D(
+    model.add(Activation(
+      'relu',  # activation
+    ))
+
+    model.add(MaxPooling2D(
       pool_size=(2, 2),
+      padding='valid'
+    ))
+
+    model.add(Dropout(
+      0.25,  # rate
+    ))
+
+    model.add(Conv2D(
+      64,  # filters
+      (3, 3),  # kernel_size,
+      strides=(1, 1),
       padding='valid',
-      name='max_pooling2d'
-    )(conv2d_1)
-
-    dropout_1 = Dropout(
-      0.25,
-      name='dropout_1'
-    )(max_pooling2d)
-
-    flatten = Flatten(
-      name='flatten'
-    )(dropout_1)
-
-    dense_1 = Dense(
-      128,
+      dilation_rate=(1, 1),
       use_bias=True,
       kernel_initializer='glorot_uniform',
-      bias_initializer='zeros',
-      name='dense_1'
-    )(flatten)
+      bias_initializer='zeros'
+    ))
 
-    dropout_3 = Dropout(
-      0.5,
-      name='dropout_3'
-    )(dense_1)
+    model.add(Activation(
+      'relu',  # activation
+    ))
 
-    dense_2 = Dense(
-      10,
-      activation='softmax',
+    model.add(Conv2D(
+      64,  # filters
+      (3, 3),  # kernel_size,
+      strides=(1, 1),
+      padding='valid',
+      dilation_rate=(1, 1),
       use_bias=True,
       kernel_initializer='glorot_uniform',
-      bias_initializer='zeros',
-      name='dense_2'
-    )(dropout_3)
+      bias_initializer='zeros'
+    ))
 
+    model.add(Activation(
+      'relu',  # activation
+    ))
 
-    # Creating model
-    _model = tf.keras.models.Model(
-      inputs  = [conv2d],
-      outputs = [dense_2]
-    )
+    model.add(MaxPooling2D(
+      pool_size=(2, 2),
+      padding='valid'
+    ))
 
-    _model.compile(
-      optimizer = optimizer,
-      loss      = loss,
-      metrics   = metrics
-    )
+    model.add(Dropout(
+      0.25,  # rate
+    ))
+
+    model.add(Flatten(
+
+    ))
+
+    model.add(Dense(
+      512,  # units,
+      use_bias=True,
+      kernel_initializer='glorot_uniform',
+      bias_initializer='zeros'
+    ))
+
+    model.add(Activation(
+      'relu',  # activation
+    ))
+
+    model.add(Dropout(
+      0.5,  # rate
+    ))
+
+    model.add(Dense(
+      0.5,  # units,
+      use_bias=True,
+      kernel_initializer='glorot_uniform',
+      bias_initializer='zeros'
+    ))
+
+    model.add(Activation(
+      'softmax',  # activation
+    ))
 
     # Returning model
     return _model

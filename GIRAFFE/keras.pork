@@ -1,37 +1,77 @@
 {
   "links": [
     {
-      "from": "531b7528-2015-43df-aae4-364cb6f3f9f6",
-      "to": "3b506439-7b0e-4b3a-bdee-6cab689643bd"
+      "from": "9b3b29cf-cc92-4a2d-a15b-ee4c2abeadbc",
+      "to": "831046e1-bb9c-4bb6-af3c-276b28ec926e"
     },
     {
-      "from": "1500329f-ff40-4828-8646-0d5d736dd053",
-      "to": "ee5d8a08-c9c5-47a8-9375-b56ea95ddd8b"
+      "from": "45cc4bc8-90ce-4a07-9744-76c8a9388450",
+      "to": "b5d06785-26f6-476e-be59-a136bfc0f937"
     },
     {
-      "from": "02898974-f480-4de0-9705-a002b6c0fe3b",
-      "to": "d68611f7-6f32-4e88-9065-e012e551515a"
+      "from": "9124b58f-8e7c-4f86-94c7-b1e5f6fe7f98",
+      "to": "e1eaf83d-b522-466e-a233-fa7d08ad6906"
     },
     {
-      "from": "96a73bee-7d2b-468b-9c64-0ff3166c1efa",
-      "to": "d36d5c36-8d5d-4cbd-a33e-aadb58d93572"
+      "from": "2db86068-8052-4d15-90ed-478c84523ca8",
+      "to": "870fc910-0049-4a7c-94d6-5b506dbf2978"
     },
     {
-      "from": "2cfe3eb0-20f5-4a43-8a7e-60233e6bf30b",
-      "to": "c8dd7296-f804-445a-8eb8-9f92a92dd2c6"
+      "from": "1dd65a48-9e3e-4235-add8-1be5754e7360",
+      "to": "bd4cfb6e-9fd5-4a65-8c7d-5a37922ae3f6"
     },
     {
-      "from": "d3251062-a68b-4484-b738-ecae9d20c0fe",
-      "to": "5846c329-e0d0-4d1e-af59-b2709b541325"
+      "from": "16bfcc10-24a0-49a7-aada-cdbc6d863e9a",
+      "to": "a4089e74-e002-4714-8828-152b4a3cfb96"
     },
     {
-      "from": "81888e63-cb54-4966-b7ef-66f10391488a",
-      "to": "d723a12c-c7ae-489e-92f6-f54cafcd3f08"
+      "from": "00e52805-b834-462f-ab97-48b59a5790e5",
+      "to": "c8b4f65f-a681-4d6c-a332-2bf0c8dffbba"
+    },
+    {
+      "from": "dfcf582d-aff4-4722-b7c2-6e13820fdb2b",
+      "to": "daa7f244-b408-4aa5-a398-3800556b3dfe"
+    },
+    {
+      "from": "4fd989b2-35b3-4cb3-bf81-bb2b151cac9c",
+      "to": "17200ef4-8d26-43f0-8fa2-a9701ca2c975"
+    },
+    {
+      "from": "a120ae90-8a68-4e85-8db6-77816e4e1c9a",
+      "to": "d8b5c3aa-7219-49f5-b7fb-21ab08d3569c"
+    },
+    {
+      "from": "a20549ab-ef8f-4369-a9ba-ca57eca1b777",
+      "to": "3bcb8ff0-d5a8-47bd-b0e3-e3319635b3bf"
+    },
+    {
+      "from": "b0ac27d0-21d9-4d67-a79c-7724cc746380",
+      "to": "cf4120a0-fac0-49f0-b27c-9b59daaccea4"
+    },
+    {
+      "from": "4e7c92e2-e3ca-44a2-8583-a79edfff075e",
+      "to": "d5f1fb68-2ee1-4acd-93ce-5e081d8bab8b"
+    },
+    {
+      "from": "d5d12dc2-a705-4d21-8253-790ab10baf16",
+      "to": "148c5e0a-1167-4c68-9fd3-72e004302c2d"
+    },
+    {
+      "from": "6752a726-8108-43fe-9e31-45dce86c3286",
+      "to": "377eab43-4f03-403a-af23-c75e4165533e"
+    },
+    {
+      "from": "8aac3a05-c554-488f-afa0-bbb8f87edb95",
+      "to": "6ede4bdb-5aa3-4f6d-bb73-8e91eba73a1a"
+    },
+    {
+      "from": "49edf51e-9943-44fa-b8e7-ba060292f8a7",
+      "to": "a93fdc71-9f3d-477d-9563-ed8180a23830"
     }
   ],
   "nodes": [
     {
-      "name": "conv2d",
+      "name": "conv2_d",
       "class": "Conv2D",
       "category": "convolutional",
       "ports": [
@@ -39,9 +79,9 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "beeea2ed-9ae7-49f0-98b7-b61acae2115b",
+          "id": "66df12c5-8511-4f61-9c63-db65f0212b4f",
           "input": true,
-          "inputPort": "c7791062-092b-439c-b23b-46da7e69c1f0",
+          "inputPort": "2630afd4-5739-4d2d-8672-916cc77634be",
           "name": "",
           "output": false,
           "outputPort": false,
@@ -53,7 +93,7 @@
           "base": "filters",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": false,
                 "arg": 0
@@ -61,7 +101,7 @@
             }
           ],
           "editable": true,
-          "id": "c0d9408d-e01c-4351-bdf5-fccfc50f604e",
+          "id": "31f0aa6c-4ff2-4633-b439-0c2df64d9804",
           "input": false,
           "inputPort": false,
           "name": "filters",
@@ -75,7 +115,7 @@
           "base": "kernel_size",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": false,
                 "arg": 1
@@ -83,13 +123,13 @@
             }
           ],
           "editable": true,
-          "id": "d9b0ac66-0140-4c09-b7a9-6c6653e68535",
+          "id": "52c5e547-bee5-4d6f-a07e-4fe557a7549f",
           "input": false,
           "inputPort": false,
           "name": "kernel_size",
           "output": false,
           "outputPort": false,
-          "value": "(3,3)",
+          "value": "(3, 3)",
           "visible": true,
           "iterator": false
         },
@@ -97,7 +137,7 @@
           "base": "strides",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -105,7 +145,7 @@
             }
           ],
           "editable": true,
-          "id": "30d7e114-7e25-494f-b87c-e0bd2284e148",
+          "id": "14c52812-f510-4beb-9be2-8e74d35c2b02",
           "input": false,
           "inputPort": false,
           "name": "strides",
@@ -119,7 +159,7 @@
           "base": "padding",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -127,7 +167,7 @@
             }
           ],
           "editable": true,
-          "id": "f96b6998-e827-4d3c-8c99-8c65f24b089a",
+          "id": "86b76350-c43b-4c28-b1c8-11720d863af1",
           "input": false,
           "inputPort": false,
           "name": "padding",
@@ -141,7 +181,7 @@
           "base": "data_format",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -149,7 +189,7 @@
             }
           ],
           "editable": true,
-          "id": "8df18d4d-4973-4043-bd35-3ee9ded87459",
+          "id": "8ecc407a-31df-42fa-a668-7dded3cf5ba8",
           "input": false,
           "inputPort": false,
           "name": "data_format",
@@ -163,7 +203,7 @@
           "base": "dilation_rate",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -171,7 +211,7 @@
             }
           ],
           "editable": true,
-          "id": "39515ea8-5541-4b88-93f7-26122db938c5",
+          "id": "2dcdb9a8-403e-4089-8a44-a4584dc384ab",
           "input": false,
           "inputPort": false,
           "name": "dilation_rate",
@@ -185,7 +225,7 @@
           "base": "activation",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -193,7 +233,7 @@
             }
           ],
           "editable": true,
-          "id": "7cce54b7-8a0c-48d2-b118-88898efa6982",
+          "id": "7656747a-b82b-4977-8c99-0a7e68f833f8",
           "input": false,
           "inputPort": false,
           "name": "activation",
@@ -207,7 +247,7 @@
           "base": "use_bias",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -215,7 +255,7 @@
             }
           ],
           "editable": true,
-          "id": "af137a15-8626-4e57-b4c3-5dc55cd7325b",
+          "id": "b9215b69-ebad-43f8-861c-4f3b96b37492",
           "input": false,
           "inputPort": false,
           "name": "use_bias",
@@ -229,7 +269,7 @@
           "base": "kernel_initializer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -237,7 +277,7 @@
             }
           ],
           "editable": true,
-          "id": "ede6992a-c833-498f-bdbd-c1d0a6f3eb16",
+          "id": "97e71eb6-9d01-4046-b090-13e6bff23101",
           "input": false,
           "inputPort": false,
           "name": "kernel_initializer",
@@ -251,7 +291,7 @@
           "base": "bias_initializer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -259,7 +299,7 @@
             }
           ],
           "editable": true,
-          "id": "6f66b8da-b204-438e-a4c2-0b37f47e5bbc",
+          "id": "6234ac03-fc40-4e0a-8151-cc1ef9911827",
           "input": false,
           "inputPort": false,
           "name": "bias_initializer",
@@ -273,7 +313,7 @@
           "base": "kernel_regularizer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -281,7 +321,7 @@
             }
           ],
           "editable": true,
-          "id": "b5f27db7-ee96-4ccf-8547-8a4b9df3bc48",
+          "id": "2af3e164-b051-4a39-bdde-7a798f394f82",
           "input": false,
           "inputPort": false,
           "name": "kernel_regularizer",
@@ -295,7 +335,7 @@
           "base": "bias_regularizer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -303,7 +343,7 @@
             }
           ],
           "editable": true,
-          "id": "1d9797c5-082e-4407-a4f0-f92e0ec54175",
+          "id": "eb8770a3-4735-4c79-9bf8-6ebf9d30912c",
           "input": false,
           "inputPort": false,
           "name": "bias_regularizer",
@@ -317,7 +357,7 @@
           "base": "activity_regularizer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -325,7 +365,7 @@
             }
           ],
           "editable": true,
-          "id": "d13bb78e-e7f8-4dcf-a79f-fed97df0c098",
+          "id": "d8b5f8b1-870f-4e35-9901-015d7be99bdd",
           "input": false,
           "inputPort": false,
           "name": "activity_regularizer",
@@ -339,7 +379,7 @@
           "base": "kernel_constraint",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -347,7 +387,7 @@
             }
           ],
           "editable": true,
-          "id": "1cd2408a-61bc-4f04-ae5b-aa47fc8ce2ca",
+          "id": "a59a87c9-d13c-4378-adb1-09aca922c884",
           "input": false,
           "inputPort": false,
           "name": "kernel_constraint",
@@ -361,7 +401,7 @@
           "base": "bias_constraint",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -369,7 +409,7 @@
             }
           ],
           "editable": true,
-          "id": "df74f730-6ccc-4782-bb00-dcff4bf196cc",
+          "id": "f3d250d0-e05e-46a5-add6-64cbe69fc606",
           "input": false,
           "inputPort": false,
           "name": "bias_constraint",
@@ -383,27 +423,27 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "f54e8228-34ac-4db5-8485-37903c76ddc7",
+          "id": "a84d783e-2663-4483-8f79-4f429452e7a7",
           "input": false,
           "inputPort": false,
           "name": "",
           "output": true,
-          "outputPort": "81888e63-cb54-4966-b7ef-66f10391488a",
+          "outputPort": "9b3b29cf-cc92-4a2d-a15b-ee4c2abeadbc",
           "value": "",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        109.99606784184789,
-        27.164565013830014
+        303.1106302191814,
+        333.57673266571436
       ],
       "code": [
         {
-          "language": "Tensorflow",
+          "language": "Keras",
           "argument": {
             "name": "Conv2D",
-            "import": "from tensorflow.keras.layers import Conv2D"
+            "import": "from keras.layers import Conv2D"
           }
         }
       ],
@@ -411,7 +451,79 @@
       "colour": "#93aa42"
     },
     {
-      "name": "conv2d_1",
+      "name": "activation",
+      "class": "Activation",
+      "category": "core",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "4be1a7da-331e-49e2-af01-07d61576be93",
+          "input": true,
+          "inputPort": "831046e1-bb9c-4bb6-af3c-276b28ec926e",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "activation",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 0
+              }
+            }
+          ],
+          "editable": true,
+          "id": "a615d8c8-3f1e-43e1-87f4-b3c690d31112",
+          "input": false,
+          "inputPort": false,
+          "name": "activation",
+          "output": false,
+          "outputPort": false,
+          "value": "'relu'",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "3af5d819-f9f6-41d6-a7a4-534ba49e947b",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "45cc4bc8-90ce-4a07-9744-76c8a9388450",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        469.93416287998355,
+        367.5575924751659
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "Activation",
+            "import": "from keras.layers import Activation"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/core/Activation",
+      "colour": "#80b649"
+    },
+    {
+      "name": "conv2_d_1",
       "class": "Conv2D",
       "category": "convolutional",
       "ports": [
@@ -419,9 +531,9 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "ba7728f9-8e7e-4634-85b5-b2400e0172cd",
+          "id": "9e4015d5-9d3c-46d1-a764-cebcbba073d7",
           "input": true,
-          "inputPort": "d723a12c-c7ae-489e-92f6-f54cafcd3f08",
+          "inputPort": "b5d06785-26f6-476e-be59-a136bfc0f937",
           "name": "",
           "output": false,
           "outputPort": false,
@@ -433,7 +545,7 @@
           "base": "filters",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": false,
                 "arg": 0
@@ -441,7 +553,7 @@
             }
           ],
           "editable": true,
-          "id": "2c11474a-6785-4ae3-bb8b-2d6b018825e2",
+          "id": "5ac3166d-622a-45b6-9a3a-35c6c8c44a1a",
           "input": false,
           "inputPort": false,
           "name": "filters",
@@ -455,7 +567,7 @@
           "base": "kernel_size",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": false,
                 "arg": 1
@@ -463,13 +575,13 @@
             }
           ],
           "editable": true,
-          "id": "92ec344e-0e0f-4652-9b40-b5dbca684869",
+          "id": "d1fc62b2-9cf7-4214-b3b0-03f721f7ec8a",
           "input": false,
           "inputPort": false,
           "name": "kernel_size",
           "output": false,
           "outputPort": false,
-          "value": "(3,3)",
+          "value": "(3, 3)",
           "visible": true,
           "iterator": false
         },
@@ -477,7 +589,7 @@
           "base": "strides",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -485,7 +597,7 @@
             }
           ],
           "editable": true,
-          "id": "4dfcae39-9360-447e-9c7f-a9f7203d9001",
+          "id": "0e65fb70-b451-4995-bc37-bb66dc7c3da7",
           "input": false,
           "inputPort": false,
           "name": "strides",
@@ -499,7 +611,7 @@
           "base": "padding",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -507,7 +619,7 @@
             }
           ],
           "editable": true,
-          "id": "feb99c40-45e2-434b-a3b8-dc0415b94f6c",
+          "id": "22a030db-e205-46a4-a28a-4d1cbe3eb2f8",
           "input": false,
           "inputPort": false,
           "name": "padding",
@@ -521,7 +633,7 @@
           "base": "data_format",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -529,7 +641,7 @@
             }
           ],
           "editable": true,
-          "id": "355a648a-e866-4211-b2c9-74e480e7abb0",
+          "id": "ecf6dae4-1d16-4829-881a-44e21fb9f9b2",
           "input": false,
           "inputPort": false,
           "name": "data_format",
@@ -543,7 +655,7 @@
           "base": "dilation_rate",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -551,7 +663,7 @@
             }
           ],
           "editable": true,
-          "id": "47672a9b-6659-4927-9aea-5fde897e0249",
+          "id": "99f5396a-df6e-4e46-b586-29dd6a8713c2",
           "input": false,
           "inputPort": false,
           "name": "dilation_rate",
@@ -565,7 +677,7 @@
           "base": "activation",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -573,7 +685,7 @@
             }
           ],
           "editable": true,
-          "id": "450b9a33-b66c-4d0a-bcfc-57e654af3028",
+          "id": "1dedd2ec-b034-4dd6-bce1-e6bf4ea9a36d",
           "input": false,
           "inputPort": false,
           "name": "activation",
@@ -587,7 +699,7 @@
           "base": "use_bias",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -595,7 +707,7 @@
             }
           ],
           "editable": true,
-          "id": "1c8cd76f-1e0d-4516-ad1b-3d14056e78a5",
+          "id": "edd4763e-6ac3-4063-b379-3ad928f3c6fd",
           "input": false,
           "inputPort": false,
           "name": "use_bias",
@@ -609,7 +721,7 @@
           "base": "kernel_initializer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -617,7 +729,7 @@
             }
           ],
           "editable": true,
-          "id": "22bbf6e6-995f-44ff-81eb-cc05297e63cb",
+          "id": "3ed4e5c7-ad97-489b-b20a-a41d19bbbe12",
           "input": false,
           "inputPort": false,
           "name": "kernel_initializer",
@@ -631,7 +743,7 @@
           "base": "bias_initializer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -639,7 +751,7 @@
             }
           ],
           "editable": true,
-          "id": "8e81bac7-41c4-4654-ae0b-bd4a0e09d5ef",
+          "id": "2b45f111-2528-4cb1-960f-86161afa70dd",
           "input": false,
           "inputPort": false,
           "name": "bias_initializer",
@@ -653,7 +765,7 @@
           "base": "kernel_regularizer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -661,7 +773,7 @@
             }
           ],
           "editable": true,
-          "id": "c4859b7a-6ab7-4dde-a9df-7042e8965c11",
+          "id": "25470b22-dd30-4d57-9abd-f854fe9f3271",
           "input": false,
           "inputPort": false,
           "name": "kernel_regularizer",
@@ -675,7 +787,7 @@
           "base": "bias_regularizer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -683,7 +795,7 @@
             }
           ],
           "editable": true,
-          "id": "53e5af4c-acb4-45b3-a090-906669556406",
+          "id": "5289e2ae-90a9-441c-86d7-f18c0ff0eb50",
           "input": false,
           "inputPort": false,
           "name": "bias_regularizer",
@@ -697,7 +809,7 @@
           "base": "activity_regularizer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -705,7 +817,7 @@
             }
           ],
           "editable": true,
-          "id": "843d4dfb-6133-4918-8509-88bdcfd96ba5",
+          "id": "6b9e28e4-4c11-4667-8e41-903661cbce31",
           "input": false,
           "inputPort": false,
           "name": "activity_regularizer",
@@ -719,7 +831,7 @@
           "base": "kernel_constraint",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -727,7 +839,7 @@
             }
           ],
           "editable": true,
-          "id": "e0b2b43b-11ef-415d-9239-f5cc5ae9c536",
+          "id": "8b717fb2-1624-4c0b-adf8-0ca9a4082868",
           "input": false,
           "inputPort": false,
           "name": "kernel_constraint",
@@ -741,7 +853,7 @@
           "base": "bias_constraint",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -749,7 +861,7 @@
             }
           ],
           "editable": true,
-          "id": "f98ab7f1-dd98-4163-88c0-ed875c5530c5",
+          "id": "11f8c825-b200-4b4f-b855-bf843dfd99ab",
           "input": false,
           "inputPort": false,
           "name": "bias_constraint",
@@ -763,27 +875,27 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "019ec246-c9a5-4750-9280-3c8ad7e363dd",
+          "id": "0e430bab-953f-4cdc-813a-b7134a7a403d",
           "input": false,
           "inputPort": false,
           "name": "",
           "output": true,
-          "outputPort": "d3251062-a68b-4484-b738-ecae9d20c0fe",
+          "outputPort": "9124b58f-8e7c-4f86-94c7-b1e5f6fe7f98",
           "value": "",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        270.9556625684104,
-        46.1648549308222
+        651.7386209418377,
+        405.82584765594873
       ],
       "code": [
         {
-          "language": "Tensorflow",
+          "language": "Keras",
           "argument": {
             "name": "Conv2D",
-            "import": "from tensorflow.keras.layers import Conv2D"
+            "import": "from keras.layers import Conv2D"
           }
         }
       ],
@@ -791,7 +903,79 @@
       "colour": "#93aa42"
     },
     {
-      "name": "max_pooling2d",
+      "name": "activation_1",
+      "class": "Activation",
+      "category": "core",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "987852bb-3e24-4b7e-8e3c-4a2888e88df4",
+          "input": true,
+          "inputPort": "e1eaf83d-b522-466e-a233-fa7d08ad6906",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "activation",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 0
+              }
+            }
+          ],
+          "editable": true,
+          "id": "164bd01e-cf9d-4792-aff1-02668e0c50a3",
+          "input": false,
+          "inputPort": false,
+          "name": "activation",
+          "output": false,
+          "outputPort": false,
+          "value": "'relu'",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "82b3ca69-769f-465b-84b5-99eaf9fa2795",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "2db86068-8052-4d15-90ed-478c84523ca8",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        808.3235671768585,
+        455.41104706500965
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "Activation",
+            "import": "from keras.layers import Activation"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/core/Activation",
+      "colour": "#80b649"
+    },
+    {
+      "name": "max_pooling2_d",
       "class": "MaxPooling2D",
       "category": "pooling",
       "ports": [
@@ -799,9 +983,9 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "5c16a2ac-1e4d-4ad2-b1b3-dbfcb3aec581",
+          "id": "7cdbc873-214d-47e5-a746-54ee13e05b85",
           "input": true,
-          "inputPort": "5846c329-e0d0-4d1e-af59-b2709b541325",
+          "inputPort": "870fc910-0049-4a7c-94d6-5b506dbf2978",
           "name": "",
           "output": false,
           "outputPort": false,
@@ -813,7 +997,7 @@
           "base": "pool_size",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -821,7 +1005,7 @@
             }
           ],
           "editable": true,
-          "id": "2161f124-817b-443a-813e-a50df9b5e88e",
+          "id": "4127f16d-9ef3-4f1b-bbbb-6eefea5cdd2d",
           "input": false,
           "inputPort": false,
           "name": "pool_size",
@@ -835,7 +1019,7 @@
           "base": "strides",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -843,7 +1027,7 @@
             }
           ],
           "editable": true,
-          "id": "b2010dec-2b1f-4eaa-879f-7e5fe108a291",
+          "id": "5f8e4244-a475-49d7-b97c-8345c65b2551",
           "input": false,
           "inputPort": false,
           "name": "strides",
@@ -857,7 +1041,7 @@
           "base": "padding",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -865,7 +1049,7 @@
             }
           ],
           "editable": true,
-          "id": "8e4a22b8-4340-4b2e-b80b-bd18f114ff7f",
+          "id": "ff68e222-67c2-4821-a801-a7c2c29e7114",
           "input": false,
           "inputPort": false,
           "name": "padding",
@@ -879,7 +1063,7 @@
           "base": "data_format",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -887,7 +1071,7 @@
             }
           ],
           "editable": true,
-          "id": "ed84ed1d-e610-4a73-9b33-3cf5c4397efa",
+          "id": "40deda16-fbb1-4c8d-a166-e811d7b82981",
           "input": false,
           "inputPort": false,
           "name": "data_format",
@@ -901,27 +1085,1185 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "bb557cdc-c15c-48f6-b46f-4a566f2742f1",
+          "id": "f525dd38-89bf-4ada-9f63-0084d3c9b133",
           "input": false,
           "inputPort": false,
           "name": "",
           "output": true,
-          "outputPort": "2cfe3eb0-20f5-4a43-8a7e-60233e6bf30b",
+          "outputPort": "1dd65a48-9e3e-4235-add8-1be5754e7360",
           "value": "",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        441.38188809703445,
-        74.80278935207485
+        1007.5425251573324,
+        478.471896228277
       ],
       "code": [
         {
-          "language": "Tensorflow",
+          "language": "Keras",
           "argument": {
             "name": "MaxPooling2D",
-            "import": "from tensorflow.keras.layers import MaxPooling2D"
+            "import": "from keras.layers import MaxPooling2D"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/pooling/MaxPooling2D",
+      "colour": "#a59941"
+    },
+    {
+      "name": "dropout",
+      "class": "Dropout",
+      "category": "core",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "7978484a-34c7-4192-ae35-910fdd9e4cb9",
+          "input": true,
+          "inputPort": "bd4cfb6e-9fd5-4a65-8c7d-5a37922ae3f6",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "rate",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 0
+              }
+            }
+          ],
+          "editable": true,
+          "id": "df47a63e-01a1-4be9-9c8d-60f05eebad43",
+          "input": false,
+          "inputPort": false,
+          "name": "rate",
+          "output": false,
+          "outputPort": false,
+          "value": "0.25",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "noise_shape",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "06c67a78-f146-46de-978f-c3fb13406bf2",
+          "input": false,
+          "inputPort": false,
+          "name": "noise_shape",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "seed",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "ce79a396-4673-4419-ad11-cf6fa860eb9c",
+          "input": false,
+          "inputPort": false,
+          "name": "seed",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "70eab50c-3058-4314-a376-79d898fce577",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "16bfcc10-24a0-49a7-aada-cdbc6d863e9a",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        1237.2004725121787,
+        487.60601473227143
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "Dropout",
+            "import": "from keras.layers import Dropout"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/core/Dropout",
+      "colour": "#80b649"
+    },
+    {
+      "name": "conv2_d_2",
+      "class": "Conv2D",
+      "category": "convolutional",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "0c90fbef-0d42-4751-bfe6-1a15ad7f1d04",
+          "input": true,
+          "inputPort": "a4089e74-e002-4714-8828-152b4a3cfb96",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "filters",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 0
+              }
+            }
+          ],
+          "editable": true,
+          "id": "20adec52-85da-45d6-b502-ab90943ead99",
+          "input": false,
+          "inputPort": false,
+          "name": "filters",
+          "output": false,
+          "outputPort": false,
+          "value": "64",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "kernel_size",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 1
+              }
+            }
+          ],
+          "editable": true,
+          "id": "720fbf29-c48f-4ea0-820b-f548c3fa9a14",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_size",
+          "output": false,
+          "outputPort": false,
+          "value": "(3, 3)",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "strides",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "f7628cd9-1189-46c3-98f7-6589314f9689",
+          "input": false,
+          "inputPort": false,
+          "name": "strides",
+          "output": false,
+          "outputPort": false,
+          "value": "(1, 1)",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "padding",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "5b6dc386-b43d-4179-91a5-e6fbb333a156",
+          "input": false,
+          "inputPort": false,
+          "name": "padding",
+          "output": false,
+          "outputPort": false,
+          "value": "'valid'",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "data_format",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "b7c7617c-ea42-4938-b02a-0e3b56ad966c",
+          "input": false,
+          "inputPort": false,
+          "name": "data_format",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "dilation_rate",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "6abf5874-1081-418c-9081-23cc25658360",
+          "input": false,
+          "inputPort": false,
+          "name": "dilation_rate",
+          "output": false,
+          "outputPort": false,
+          "value": "(1, 1)",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "activation",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "2c9f15ad-ed67-41ce-84e4-f41fc0677e89",
+          "input": false,
+          "inputPort": false,
+          "name": "activation",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_bias",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "1a911095-f508-4602-85c2-c1f863b6c337",
+          "input": false,
+          "inputPort": false,
+          "name": "use_bias",
+          "output": false,
+          "outputPort": false,
+          "value": true,
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "kernel_initializer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "940137b6-2f37-4f8d-b9c7-b9a81dccfd00",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_initializer",
+          "output": false,
+          "outputPort": false,
+          "value": "'glorot_uniform'",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bias_initializer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "dd19d31b-100e-4465-b83b-bf28a9188407",
+          "input": false,
+          "inputPort": false,
+          "name": "bias_initializer",
+          "output": false,
+          "outputPort": false,
+          "value": "'zeros'",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "kernel_regularizer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "cb40a18a-bd82-4b47-a6bb-196d8ee4a963",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_regularizer",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bias_regularizer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "434840fa-cd7f-4b24-92b8-fb29576f3d0d",
+          "input": false,
+          "inputPort": false,
+          "name": "bias_regularizer",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "activity_regularizer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "e0460e20-4ba6-4489-8c55-1398e107258b",
+          "input": false,
+          "inputPort": false,
+          "name": "activity_regularizer",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "kernel_constraint",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "aa748c6e-6e2f-46d6-98af-3121519423ab",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_constraint",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bias_constraint",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "06581235-0978-4eed-9eb8-1b7854bc8880",
+          "input": false,
+          "inputPort": false,
+          "name": "bias_constraint",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "87cfe70b-e390-41d0-a855-e29ba59c07df",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "00e52805-b834-462f-ab97-48b59a5790e5",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        1399.7559244086347,
+        705.7262382809488
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "Conv2D",
+            "import": "from keras.layers import Conv2D"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/convolutional/Conv2D",
+      "colour": "#93aa42"
+    },
+    {
+      "name": "activation_2",
+      "class": "Activation",
+      "category": "core",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "1a25b174-3a00-47d3-b6c3-0d4a3a608aa1",
+          "input": true,
+          "inputPort": "17200ef4-8d26-43f0-8fa2-a9701ca2c975",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "activation",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 0
+              }
+            }
+          ],
+          "editable": true,
+          "id": "d28b56ca-2436-42ac-8cd5-8a0e2f7f8eb1",
+          "input": false,
+          "inputPort": false,
+          "name": "activation",
+          "output": false,
+          "outputPort": false,
+          "value": "'relu'",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "c47b5353-cd2b-43f1-a0a7-f03aa6cfa786",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "a120ae90-8a68-4e85-8db6-77816e4e1c9a",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        1923.6158035049834,
+        801.7968502876658
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "Activation",
+            "import": "from keras.layers import Activation"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/core/Activation",
+      "colour": "#80b649"
+    },
+    {
+      "name": "activation_3",
+      "class": "Activation",
+      "category": "core",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "a9de78b5-8f5d-4c79-8571-c8e9fdc0eaef",
+          "input": true,
+          "inputPort": "c8b4f65f-a681-4d6c-a332-2bf0c8dffbba",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "activation",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 0
+              }
+            }
+          ],
+          "editable": true,
+          "id": "aee8ae14-8287-4ec9-a676-ef4b9a1e048b",
+          "input": false,
+          "inputPort": false,
+          "name": "activation",
+          "output": false,
+          "outputPort": false,
+          "value": "'relu'",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "38b9c1a7-e68f-4ae7-abde-882817a5b978",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "dfcf582d-aff4-4722-b7c2-6e13820fdb2b",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        1575.4309280167022,
+        742.2963009712596
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "Activation",
+            "import": "from keras.layers import Activation"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/core/Activation",
+      "colour": "#80b649"
+    },
+    {
+      "name": "conv2_d_3",
+      "class": "Conv2D",
+      "category": "convolutional",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "436f0599-8fdb-4aad-bd22-cc8e6487775c",
+          "input": true,
+          "inputPort": "daa7f244-b408-4aa5-a398-3800556b3dfe",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "filters",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 0
+              }
+            }
+          ],
+          "editable": true,
+          "id": "112d414d-f30e-4c9c-8ec3-1ef57fcee9ae",
+          "input": false,
+          "inputPort": false,
+          "name": "filters",
+          "output": false,
+          "outputPort": false,
+          "value": "64",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "kernel_size",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 1
+              }
+            }
+          ],
+          "editable": true,
+          "id": "1f107919-b485-4a02-97c6-6d67dcb22cdf",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_size",
+          "output": false,
+          "outputPort": false,
+          "value": "(3, 3)",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "strides",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "504e80f1-7584-471c-862d-e7d30cdf8ec7",
+          "input": false,
+          "inputPort": false,
+          "name": "strides",
+          "output": false,
+          "outputPort": false,
+          "value": "(1, 1)",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "padding",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "e7959c32-cb2f-411c-af33-2084889464fd",
+          "input": false,
+          "inputPort": false,
+          "name": "padding",
+          "output": false,
+          "outputPort": false,
+          "value": "'valid'",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "data_format",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "84466598-7fd6-482a-a22e-2beab1743974",
+          "input": false,
+          "inputPort": false,
+          "name": "data_format",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "dilation_rate",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "4cbccba8-4563-4b32-96ca-c8fe5b1acca0",
+          "input": false,
+          "inputPort": false,
+          "name": "dilation_rate",
+          "output": false,
+          "outputPort": false,
+          "value": "(1, 1)",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "activation",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "8fad358c-011a-4434-ae27-c21586e46d97",
+          "input": false,
+          "inputPort": false,
+          "name": "activation",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_bias",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "d3be828b-c9ca-4765-85d8-0edd2d37051f",
+          "input": false,
+          "inputPort": false,
+          "name": "use_bias",
+          "output": false,
+          "outputPort": false,
+          "value": true,
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "kernel_initializer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "6149a6c7-e7ee-490f-b19b-7ceccceaca96",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_initializer",
+          "output": false,
+          "outputPort": false,
+          "value": "'glorot_uniform'",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bias_initializer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "e83f34c9-bc02-4427-aab2-9edc13f510be",
+          "input": false,
+          "inputPort": false,
+          "name": "bias_initializer",
+          "output": false,
+          "outputPort": false,
+          "value": "'zeros'",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "kernel_regularizer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "e0670303-be4e-458a-ac89-2d70ca98ca49",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_regularizer",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bias_regularizer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "ae24fb75-81da-4102-97f1-d33aad32fa91",
+          "input": false,
+          "inputPort": false,
+          "name": "bias_regularizer",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "activity_regularizer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "359e7316-59d4-49e9-a014-6c4250896f1e",
+          "input": false,
+          "inputPort": false,
+          "name": "activity_regularizer",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "kernel_constraint",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "f35417aa-c105-4542-b0c2-e063ba35c8d9",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_constraint",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bias_constraint",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "32372cca-8377-4e52-8944-3e1dd4a78955",
+          "input": false,
+          "inputPort": false,
+          "name": "bias_constraint",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "b7f2c891-ff64-4e98-ac6b-d7831e532537",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "4fd989b2-35b3-4cb3-bf81-bb2b151cac9c",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        1774.1548501898847,
+        760.8011894528238
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "Conv2D",
+            "import": "from keras.layers import Conv2D"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/convolutional/Conv2D",
+      "colour": "#93aa42"
+    },
+    {
+      "name": "max_pooling2_d_1",
+      "class": "MaxPooling2D",
+      "category": "pooling",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "629ea766-1f67-4119-87d2-fc8d37eab5b8",
+          "input": true,
+          "inputPort": "d8b5c3aa-7219-49f5-b7fb-21ab08d3569c",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "pool_size",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "058ab977-4608-46bb-bbd5-df6bd9ebe94c",
+          "input": false,
+          "inputPort": false,
+          "name": "pool_size",
+          "output": false,
+          "outputPort": false,
+          "value": "(2, 2)",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "strides",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "c0aded3f-e26f-443a-a43f-4f4d8f7eea76",
+          "input": false,
+          "inputPort": false,
+          "name": "strides",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "padding",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "3a461f42-cb3c-4aec-9bce-1baf0280003f",
+          "input": false,
+          "inputPort": false,
+          "name": "padding",
+          "output": false,
+          "outputPort": false,
+          "value": "'valid'",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "data_format",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "b18bbe19-f5d9-4eeb-8efc-0a7eaba30f34",
+          "input": false,
+          "inputPort": false,
+          "name": "data_format",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "801c802a-a2fc-4006-a767-8f9dfeca71e9",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "a20549ab-ef8f-4369-a9ba-ca57eca1b777",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        2116.5825642198324,
+        816.3423185915583
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "MaxPooling2D",
+            "import": "from keras.layers import MaxPooling2D"
           }
         }
       ],
@@ -937,9 +2279,9 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "8f6f15a3-a4ba-4617-9997-41e2083a8868",
+          "id": "36f623d6-de6e-4fc2-8429-b29690ee19ea",
           "input": true,
-          "inputPort": "c8dd7296-f804-445a-8eb8-9f92a92dd2c6",
+          "inputPort": "3bcb8ff0-d5a8-47bd-b0e3-e3319635b3bf",
           "name": "",
           "output": false,
           "outputPort": false,
@@ -951,7 +2293,7 @@
           "base": "rate",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": false,
                 "arg": 0
@@ -959,7 +2301,7 @@
             }
           ],
           "editable": true,
-          "id": "f4f630fe-8151-4ddb-9e52-5a7bdbe2d1d5",
+          "id": "88e8b8bf-fca1-427b-b23f-b1324e9d8278",
           "input": false,
           "inputPort": false,
           "name": "rate",
@@ -973,7 +2315,7 @@
           "base": "noise_shape",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -981,7 +2323,7 @@
             }
           ],
           "editable": true,
-          "id": "7b1edd1c-6cb4-4cc0-8348-a9a568f97333",
+          "id": "b4b5179a-3abb-4d0a-a3b0-e563374689ec",
           "input": false,
           "inputPort": false,
           "name": "noise_shape",
@@ -995,7 +2337,7 @@
           "base": "seed",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1003,7 +2345,7 @@
             }
           ],
           "editable": true,
-          "id": "cc574864-8739-4c30-b6a0-d5e30fde267f",
+          "id": "a6c8e73f-b96a-4943-ad99-8d989581443a",
           "input": false,
           "inputPort": false,
           "name": "seed",
@@ -1017,27 +2359,27 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "6cafbaa5-dec7-4a0d-8849-9ac28d224b06",
+          "id": "1e881e29-d605-4ead-a991-629546288a44",
           "input": false,
           "inputPort": false,
           "name": "",
           "output": true,
-          "outputPort": "96a73bee-7d2b-468b-9c64-0ff3166c1efa",
+          "outputPort": "b0ac27d0-21d9-4d67-a79c-7724cc746380",
           "value": "",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        661.0977309685034,
-        96.01673865163677
+        2383.8937098168662,
+        838.5980801619589
       ],
       "code": [
         {
-          "language": "Tensorflow",
+          "language": "Keras",
           "argument": {
             "name": "Dropout",
-            "import": "from tensorflow.keras.layers import Dropout"
+            "import": "from keras.layers import Dropout"
           }
         }
       ],
@@ -1053,9 +2395,9 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "ec3ade87-6584-4d94-a3d7-cb9d59090e89",
+          "id": "7dce7692-2f74-4c0b-90c6-e06eca7eb520",
           "input": true,
-          "inputPort": "d36d5c36-8d5d-4cbd-a33e-aadb58d93572",
+          "inputPort": "cf4120a0-fac0-49f0-b27c-9b59daaccea4",
           "name": "",
           "output": false,
           "outputPort": false,
@@ -1067,7 +2409,7 @@
           "base": "data_format",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1075,7 +2417,7 @@
             }
           ],
           "editable": true,
-          "id": "c7619ca8-e997-4c72-b77f-892f89c06814",
+          "id": "0f76f60f-8a35-4547-ba5d-0f37e023cb98",
           "input": false,
           "inputPort": false,
           "name": "data_format",
@@ -1089,27 +2431,27 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "e3b7e93b-0e95-49fe-a930-64f701036639",
+          "id": "4642a79a-e327-4053-b004-34badd1aa3e0",
           "input": false,
           "inputPort": false,
           "name": "",
           "output": true,
-          "outputPort": "02898974-f480-4de0-9705-a002b6c0fe3b",
+          "outputPort": "4e7c92e2-e3ca-44a2-8583-a79edfff075e",
           "value": "",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        821.7176358833337,
-        141.47519769619447
+        2609.1482323521836,
+        1013.5098738973129
       ],
       "code": [
         {
-          "language": "Tensorflow",
+          "language": "Keras",
           "argument": {
             "name": "Flatten",
-            "import": "from tensorflow.keras.layers import Flatten"
+            "import": "from keras.layers import Flatten"
           }
         }
       ],
@@ -1117,7 +2459,7 @@
       "colour": "#80b649"
     },
     {
-      "name": "dense_1",
+      "name": "dense",
       "class": "Dense",
       "category": "core",
       "ports": [
@@ -1125,9 +2467,9 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "98639df2-e77f-4ab9-92e0-e7cd6369ff06",
+          "id": "6808520b-1db3-439e-bbd7-e63848f26774",
           "input": true,
-          "inputPort": "d68611f7-6f32-4e88-9065-e012e551515a",
+          "inputPort": "d5f1fb68-2ee1-4acd-93ce-5e081d8bab8b",
           "name": "",
           "output": false,
           "outputPort": false,
@@ -1139,7 +2481,7 @@
           "base": "units",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": false,
                 "arg": 0
@@ -1147,13 +2489,13 @@
             }
           ],
           "editable": true,
-          "id": "d8737431-8ce3-4ab2-8fcf-ac84f9b5e0c7",
+          "id": "90941072-09eb-47c5-b761-b109e2151c0f",
           "input": false,
           "inputPort": false,
           "name": "units",
           "output": false,
           "outputPort": false,
-          "value": "128",
+          "value": "512",
           "visible": true,
           "iterator": false
         },
@@ -1161,7 +2503,7 @@
           "base": "activation",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1169,7 +2511,7 @@
             }
           ],
           "editable": true,
-          "id": "976cc456-2e81-47dd-a54a-b132b51b7f4b",
+          "id": "933c40d9-2efd-49fb-ac88-d0b8bc62af59",
           "input": false,
           "inputPort": false,
           "name": "activation",
@@ -1183,7 +2525,7 @@
           "base": "use_bias",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1191,7 +2533,7 @@
             }
           ],
           "editable": true,
-          "id": "f4aaa549-56e5-4016-aa2d-fc213e433ee0",
+          "id": "81d62759-9a85-456e-a0d9-6d442b013b9b",
           "input": false,
           "inputPort": false,
           "name": "use_bias",
@@ -1205,7 +2547,7 @@
           "base": "kernel_initializer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1213,7 +2555,7 @@
             }
           ],
           "editable": true,
-          "id": "42e18062-d5cb-4325-9a71-1c5995d09c82",
+          "id": "7707078e-d008-46d4-a95e-5db1c2689929",
           "input": false,
           "inputPort": false,
           "name": "kernel_initializer",
@@ -1227,7 +2569,7 @@
           "base": "bias_initializer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1235,7 +2577,7 @@
             }
           ],
           "editable": true,
-          "id": "ad441ff6-f6a6-448b-8dca-989647e83cb8",
+          "id": "d935cbb1-5224-4a68-8fbb-a52f67a91af5",
           "input": false,
           "inputPort": false,
           "name": "bias_initializer",
@@ -1249,7 +2591,7 @@
           "base": "kernel_regularizer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1257,7 +2599,7 @@
             }
           ],
           "editable": true,
-          "id": "dadb2182-5faf-40bf-8f14-7e1bbf4a0e8f",
+          "id": "2a16ed79-654a-4273-baaf-cd5a0ff58787",
           "input": false,
           "inputPort": false,
           "name": "kernel_regularizer",
@@ -1271,7 +2613,7 @@
           "base": "bias_regularizer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1279,7 +2621,7 @@
             }
           ],
           "editable": true,
-          "id": "7a8057de-8b6f-4fa4-a258-e6b73212fd04",
+          "id": "46361512-36ac-43e9-917f-c1e3c1e45f19",
           "input": false,
           "inputPort": false,
           "name": "bias_regularizer",
@@ -1293,7 +2635,7 @@
           "base": "activity_regularizer",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1301,7 +2643,7 @@
             }
           ],
           "editable": true,
-          "id": "bd4f69f0-efd4-4f15-9f84-7b025c2d7a29",
+          "id": "2056d12a-e2b4-4255-abe1-7c6c93601fea",
           "input": false,
           "inputPort": false,
           "name": "activity_regularizer",
@@ -1315,7 +2657,7 @@
           "base": "kernel_constraint",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1323,7 +2665,7 @@
             }
           ],
           "editable": true,
-          "id": "9867ccb7-8866-4488-8620-6fc27cdc76b2",
+          "id": "282e6c0e-17a0-4e53-a1d1-d6337d2070df",
           "input": false,
           "inputPort": false,
           "name": "kernel_constraint",
@@ -1337,7 +2679,7 @@
           "base": "bias_constraint",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1345,7 +2687,7 @@
             }
           ],
           "editable": true,
-          "id": "451f4684-4679-4179-b5d7-a63a5411b345",
+          "id": "2989c9b1-ff35-4744-b448-f5d591ee5e8f",
           "input": false,
           "inputPort": false,
           "name": "bias_constraint",
@@ -1359,27 +2701,27 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "d1fda34c-d19b-4f33-bd09-75b72cdaca99",
+          "id": "ab89a418-217c-4c00-b084-1e1147400de1",
           "input": false,
           "inputPort": false,
           "name": "",
           "output": true,
-          "outputPort": "1500329f-ff40-4828-8646-0d5d736dd053",
+          "outputPort": "d5d12dc2-a705-4d21-8253-790ab10baf16",
           "value": "",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        961.1236062138887,
-        146.021049193704
+        2753.414277048996,
+        1006.4725623515253
       ],
       "code": [
         {
-          "language": "Tensorflow",
+          "language": "Keras",
           "argument": {
             "name": "Dense",
-            "import": "from tensorflow.keras.layers import Dense"
+            "import": "from keras.layers import Dense"
           }
         }
       ],
@@ -1387,43 +2729,21 @@
       "colour": "#80b649"
     },
     {
-      "name": "dense_2",
-      "class": "Dense",
+      "name": "activation_4",
+      "class": "Activation",
       "category": "core",
       "ports": [
         {
           "base": "",
           "code": [],
           "editable": true,
-          "id": "aa92c3ba-4297-4b8b-9a88-c8feae9f2cd8",
+          "id": "71a97d50-1151-4723-8ea7-e3b187e18e64",
           "input": true,
-          "inputPort": "3b506439-7b0e-4b3a-bdee-6cab689643bd",
+          "inputPort": "148c5e0a-1167-4c68-9fd3-72e004302c2d",
           "name": "",
           "output": false,
           "outputPort": false,
           "value": "",
-          "visible": true,
-          "iterator": false
-        },
-        {
-          "base": "units",
-          "code": [
-            {
-              "language": "Tensorflow",
-              "argument": {
-                "kwarg": false,
-                "arg": 0
-              }
-            }
-          ],
-          "editable": true,
-          "id": "6215dcd2-9110-4478-9347-a21902fc8f04",
-          "input": false,
-          "inputPort": false,
-          "name": "units",
-          "output": false,
-          "outputPort": false,
-          "value": "10",
           "visible": true,
           "iterator": false
         },
@@ -1431,233 +2751,57 @@
           "base": "activation",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
-                "kwarg": true,
-                "arg": false
+                "kwarg": false,
+                "arg": 0
               }
             }
           ],
           "editable": true,
-          "id": "beea03fe-510b-409f-8f39-cabc1fcd4a67",
+          "id": "4759bdb9-6e0a-4d1b-b714-441a9b7bc303",
           "input": false,
           "inputPort": false,
           "name": "activation",
           "output": false,
           "outputPort": false,
-          "value": "'softmax'",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "use_bias",
-          "code": [
-            {
-              "language": "Tensorflow",
-              "argument": {
-                "kwarg": true,
-                "arg": false
-              }
-            }
-          ],
-          "editable": true,
-          "id": "b515d8ef-9834-4bda-8eb6-4bbfb2eece6c",
-          "input": false,
-          "inputPort": false,
-          "name": "use_bias",
-          "output": false,
-          "outputPort": false,
-          "value": true,
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "kernel_initializer",
-          "code": [
-            {
-              "language": "Tensorflow",
-              "argument": {
-                "kwarg": true,
-                "arg": false
-              }
-            }
-          ],
-          "editable": true,
-          "id": "0298baeb-67d2-4852-8859-981bb4648da2",
-          "input": false,
-          "inputPort": false,
-          "name": "kernel_initializer",
-          "output": false,
-          "outputPort": false,
-          "value": "'glorot_uniform'",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "bias_initializer",
-          "code": [
-            {
-              "language": "Tensorflow",
-              "argument": {
-                "kwarg": true,
-                "arg": false
-              }
-            }
-          ],
-          "editable": true,
-          "id": "8489178c-97ed-470e-b084-86d78ca3192d",
-          "input": false,
-          "inputPort": false,
-          "name": "bias_initializer",
-          "output": false,
-          "outputPort": false,
-          "value": "'zeros'",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "kernel_regularizer",
-          "code": [
-            {
-              "language": "Tensorflow",
-              "argument": {
-                "kwarg": true,
-                "arg": false
-              }
-            }
-          ],
-          "editable": true,
-          "id": "6817cf74-2a96-4c08-8f7a-38a90b6367db",
-          "input": false,
-          "inputPort": false,
-          "name": "kernel_regularizer",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "bias_regularizer",
-          "code": [
-            {
-              "language": "Tensorflow",
-              "argument": {
-                "kwarg": true,
-                "arg": false
-              }
-            }
-          ],
-          "editable": true,
-          "id": "20faa60e-bc1b-4d0a-9b28-d46deba33f0b",
-          "input": false,
-          "inputPort": false,
-          "name": "bias_regularizer",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "activity_regularizer",
-          "code": [
-            {
-              "language": "Tensorflow",
-              "argument": {
-                "kwarg": true,
-                "arg": false
-              }
-            }
-          ],
-          "editable": true,
-          "id": "c525f3e9-1561-4b95-b799-bb5c866c13ae",
-          "input": false,
-          "inputPort": false,
-          "name": "activity_regularizer",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "kernel_constraint",
-          "code": [
-            {
-              "language": "Tensorflow",
-              "argument": {
-                "kwarg": true,
-                "arg": false
-              }
-            }
-          ],
-          "editable": true,
-          "id": "d4f3da72-f15c-4117-abbf-9039db5624c6",
-          "input": false,
-          "inputPort": false,
-          "name": "kernel_constraint",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "bias_constraint",
-          "code": [
-            {
-              "language": "Tensorflow",
-              "argument": {
-                "kwarg": true,
-                "arg": false
-              }
-            }
-          ],
-          "editable": true,
-          "id": "db227c5a-aac0-4b83-b3b8-8aaa40c294d6",
-          "input": false,
-          "inputPort": false,
-          "name": "bias_constraint",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
+          "value": "'relu'",
+          "visible": true,
           "iterator": false
         },
         {
           "base": "",
           "code": [],
           "editable": true,
-          "id": "4808f48e-b8c7-4fb3-bb87-8444398517ca",
+          "id": "545b1774-497e-4eca-a176-711a2016fe0c",
           "input": false,
           "inputPort": false,
           "name": "",
           "output": true,
-          "outputPort": "af3aef14-6b00-4f03-898c-5acef6db4d45",
+          "outputPort": "6752a726-8108-43fe-9e31-45dce86c3286",
           "value": "",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        1232.6604104131075,
-        172.08217590268836
+        2855.0999343643584,
+        1041.8129025337596
       ],
       "code": [
         {
-          "language": "Tensorflow",
+          "language": "Keras",
           "argument": {
-            "name": "Dense",
-            "import": "from tensorflow.keras.layers import Dense"
+            "name": "Activation",
+            "import": "from keras.layers import Activation"
           }
         }
       ],
-      "web_url": "https://keras.io/layers/core/Dense",
+      "web_url": "https://keras.io/layers/core/Activation",
       "colour": "#80b649"
     },
     {
-      "name": "dropout_3",
+      "name": "dropout_2",
       "class": "Dropout",
       "category": "core",
       "ports": [
@@ -1665,9 +2809,9 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "433822e6-b8eb-46d8-9102-8d2e3ed21a1b",
+          "id": "808471a5-7501-499a-bacf-e5ae2b18cced",
           "input": true,
-          "inputPort": "ee5d8a08-c9c5-47a8-9375-b56ea95ddd8b",
+          "inputPort": "377eab43-4f03-403a-af23-c75e4165533e",
           "name": "",
           "output": false,
           "outputPort": false,
@@ -1679,7 +2823,7 @@
           "base": "rate",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": false,
                 "arg": 0
@@ -1687,7 +2831,7 @@
             }
           ],
           "editable": true,
-          "id": "9495d7fb-5a31-4418-ab8d-a64e3f3d8a9c",
+          "id": "08deb002-c25c-4aab-8805-19e3f6ee62a0",
           "input": false,
           "inputPort": false,
           "name": "rate",
@@ -1701,7 +2845,7 @@
           "base": "noise_shape",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1709,7 +2853,7 @@
             }
           ],
           "editable": true,
-          "id": "a9764cfc-c87b-4352-8593-3b6cbefdfaab",
+          "id": "a2c669d8-fc4b-4b01-85c8-89c270e599f3",
           "input": false,
           "inputPort": false,
           "name": "noise_shape",
@@ -1723,7 +2867,7 @@
           "base": "seed",
           "code": [
             {
-              "language": "Tensorflow",
+              "language": "Keras",
               "argument": {
                 "kwarg": true,
                 "arg": false
@@ -1731,7 +2875,7 @@
             }
           ],
           "editable": true,
-          "id": "33c15c46-13e9-4357-8501-6ef11184a511",
+          "id": "f2f032da-a0d9-48cf-9e81-19819f8d82db",
           "input": false,
           "inputPort": false,
           "name": "seed",
@@ -1745,31 +2889,373 @@
           "base": "",
           "code": [],
           "editable": true,
-          "id": "01fbabf8-3a71-48dc-bd32-8f23ba0487ca",
+          "id": "de5897d6-9488-4afb-95fe-1ff02727f07c",
           "input": false,
           "inputPort": false,
           "name": "",
           "output": true,
-          "outputPort": "531b7528-2015-43df-aae4-364cb6f3f9f6",
+          "outputPort": "8aac3a05-c554-488f-afa0-bbb8f87edb95",
           "value": "",
           "visible": true,
           "iterator": false
         }
       ],
       "position": [
-        1085.677992198972,
-        146.32238745534772
+        3047.1004969262412,
+        1051.8904995955527
       ],
       "code": [
         {
-          "language": "Tensorflow",
+          "language": "Keras",
           "argument": {
             "name": "Dropout",
-            "import": "from tensorflow.keras.layers import Dropout"
+            "import": "from keras.layers import Dropout"
           }
         }
       ],
       "web_url": "https://keras.io/layers/core/Dropout",
+      "colour": "#80b649"
+    },
+    {
+      "name": "dense_1",
+      "class": "Dense",
+      "category": "core",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "f15cd88b-3ac1-406b-9ac8-d120af154f21",
+          "input": true,
+          "inputPort": "6ede4bdb-5aa3-4f6d-bb73-8e91eba73a1a",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "units",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 0
+              }
+            }
+          ],
+          "editable": true,
+          "id": "108ed82d-c939-4517-953d-f4dc24d20cbe",
+          "input": false,
+          "inputPort": false,
+          "name": "units",
+          "output": false,
+          "outputPort": false,
+          "value": "0.5",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "activation",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "05ab1cd5-c760-4270-9a6f-06f55cd21b87",
+          "input": false,
+          "inputPort": false,
+          "name": "activation",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_bias",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "d87ed10b-3e4a-433c-8036-df92d33e66c3",
+          "input": false,
+          "inputPort": false,
+          "name": "use_bias",
+          "output": false,
+          "outputPort": false,
+          "value": true,
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "kernel_initializer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "d5f2c3ec-7abf-455d-be1d-afbdc53e30f2",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_initializer",
+          "output": false,
+          "outputPort": false,
+          "value": "'glorot_uniform'",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bias_initializer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "b67e632b-39b5-47b7-b7c0-3e96c3798943",
+          "input": false,
+          "inputPort": false,
+          "name": "bias_initializer",
+          "output": false,
+          "outputPort": false,
+          "value": "'zeros'",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "kernel_regularizer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "12228453-9cc6-4d0f-980d-e5dc8c2287a7",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_regularizer",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bias_regularizer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "b19ce4af-d513-46c2-9836-99af4776aeb7",
+          "input": false,
+          "inputPort": false,
+          "name": "bias_regularizer",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "activity_regularizer",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "5e0ccfb3-7259-48de-8928-949e0beb0091",
+          "input": false,
+          "inputPort": false,
+          "name": "activity_regularizer",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "kernel_constraint",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "c5b713a2-080c-4832-8d24-a4eeb026a463",
+          "input": false,
+          "inputPort": false,
+          "name": "kernel_constraint",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bias_constraint",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": true,
+                "arg": false
+              }
+            }
+          ],
+          "editable": true,
+          "id": "7b257a6b-92e0-47bb-9555-261f6fa89033",
+          "input": false,
+          "inputPort": false,
+          "name": "bias_constraint",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "2086f550-dec0-42bd-9edd-cce752d15bd9",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "49edf51e-9943-44fa-b8e7-ba060292f8a7",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        3195.656708689621,
+        1066.9374061015253
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "Dense",
+            "import": "from keras.layers import Dense"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/core/Dense",
+      "colour": "#80b649"
+    },
+    {
+      "name": "activation_5",
+      "class": "Activation",
+      "category": "core",
+      "ports": [
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "a4f90575-350b-4463-9f17-0e869d75df17",
+          "input": true,
+          "inputPort": "a93fdc71-9f3d-477d-9563-ed8180a23830",
+          "name": "",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "activation",
+          "code": [
+            {
+              "language": "Keras",
+              "argument": {
+                "kwarg": false,
+                "arg": 0
+              }
+            }
+          ],
+          "editable": true,
+          "id": "62a49220-32eb-4f46-b778-862983d66e1d",
+          "input": false,
+          "inputPort": false,
+          "name": "activation",
+          "output": false,
+          "outputPort": false,
+          "value": "'softmax'",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "",
+          "code": [],
+          "editable": true,
+          "id": "196f3e1c-1cf7-4436-9711-3d6bc871cfca",
+          "input": false,
+          "inputPort": false,
+          "name": "",
+          "output": true,
+          "outputPort": "17a0ef9c-2ca9-4461-aad7-769857402013",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        3329.0105788956084,
+        1074.1283322212596
+      ],
+      "code": [
+        {
+          "language": "Keras",
+          "argument": {
+            "name": "Activation",
+            "import": "from keras.layers import Activation"
+          }
+        }
+      ],
+      "web_url": "https://keras.io/layers/core/Activation",
       "colour": "#80b649"
     }
   ],
