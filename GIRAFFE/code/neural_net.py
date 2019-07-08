@@ -17,8 +17,8 @@ def NeuralNet(shape):
     model = Sequential()
 
     model.add(Conv2D(
-      (3, 3),  # kernel_size
-      32,  # filters,
+      32,  # filters
+      (3, 3),  # kernel_size,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
@@ -32,8 +32,8 @@ def NeuralNet(shape):
     ))
 
     model.add(Conv2D(
-      (3, 3),  # kernel_size
-      32,  # filters,
+      32,  # filters
+      (3, 3),  # kernel_size,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
@@ -56,8 +56,8 @@ def NeuralNet(shape):
     ))
 
     model.add(Conv2D(
-      (3, 3),  # kernel_size
-      64,  # filters,
+      64,  # filters
+      (3, 3),  # kernel_size,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
@@ -71,8 +71,8 @@ def NeuralNet(shape):
     ))
 
     model.add(Conv2D(
-      (3, 3),  # kernel_size
-      64,  # filters,
+      64,  # filters
+      (3, 3),  # kernel_size,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
