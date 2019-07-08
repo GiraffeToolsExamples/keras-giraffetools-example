@@ -3,6 +3,8 @@ Created by the GiraffeTools Tensorflow generator.
 Warning, here be dragons.
 
 '''
+
+from keras.models import Sequential
 from keras.layers import Conv2D
 from keras.layers import Activation
 from keras.layers import MaxPooling2D
@@ -15,8 +17,8 @@ def NeuralNet(shape):
     model = Sequential()
 
     model.add(Conv2D(
-      32,  # filters
-      (3, 3),  # kernel_size,
+      (3, 3),  # kernel_size
+      32,  # filters,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
@@ -30,8 +32,8 @@ def NeuralNet(shape):
     ))
 
     model.add(Conv2D(
-      32,  # filters
-      (3, 3),  # kernel_size,
+      (3, 3),  # kernel_size
+      32,  # filters,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
@@ -54,8 +56,8 @@ def NeuralNet(shape):
     ))
 
     model.add(Conv2D(
-      64,  # filters
-      (3, 3),  # kernel_size,
+      (3, 3),  # kernel_size
+      64,  # filters,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
@@ -69,8 +71,8 @@ def NeuralNet(shape):
     ))
 
     model.add(Conv2D(
-      64,  # filters
-      (3, 3),  # kernel_size,
+      (3, 3),  # kernel_size
+      64,  # filters,
       strides=(1, 1),
       padding='valid',
       dilation_rate=(1, 1),
@@ -112,7 +114,7 @@ def NeuralNet(shape):
     ))
 
     model.add(Dense(
-      0.5,  # units,
+      10,  # units,
       use_bias=True,
       kernel_initializer='glorot_uniform',
       bias_initializer='zeros'
@@ -123,4 +125,4 @@ def NeuralNet(shape):
     ))
 
     # Returning model
-    return _model
+    return model
